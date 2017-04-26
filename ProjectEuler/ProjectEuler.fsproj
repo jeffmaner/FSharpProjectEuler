@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e18a0708-866d-4166-b978-099989caf8fc}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ProjectEuler</RootNamespace>
+    <AssemblyName>ProjectEuler</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <Name>ProjectEuler</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <Tailcalls>false</Tailcalls>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>bin\Debug\ProjectEuler.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <Tailcalls>true</Tailcalls>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <WarningLevel>3</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>bin\Release\ProjectEuler.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Problem1.fs" />
+    <Compile Include="Problem2.fs" />
+    <Compile Include="Problem3.fs" />
+    <Compile Include="Problem4.fs" />
+    <Compile Include="Problem5.fs" />
+    <Compile Include="Problem6.fs" />
+    <Compile Include="Problem7.fs" />
+    <Compile Include="Problem8.fs" />
+    <Compile Include="Problem9.fs" />
+    <Compile Include="Problem10.fs" />
+    <Compile Include="Problem11.fs" />
+    <Compile Include="Problem12.fs" />
+    <Compile Include="Problem13.fs" />
+    <Compile Include="Problem14.fs" />
+    <Compile Include="Problem15.fs" />
+    <Compile Include="Problem16.fs" />
+    <Compile Include="Problem17.fs" />
+    <Compile Include="Problem18.fs" />
+    <Compile Include="Problem19.fs" />
+    <Compile Include="Problem20.fs" />
+    <Compile Include="Problem21.fs" />
+    <Compile Include="Problem22.fs" />
+    <Compile Include="Problem23.fs" />
+    <Compile Include="Problem24.fs" />
+    <Compile Include="Problem25.fs" />
+    <Compile Include="Problem26.fs" />
+    <Compile Include="Problem27.fs" />
+    <Compile Include="Problem28.fs" />
+    <Compile Include="Problem29.fs" />
+    <Compile Include="Problem30.fs" />
+    <Compile Include="Problem31.fs" />
+    <Compile Include="Problem32.fs" />
+    <Compile Include="Problem33.fs" />
+    <Compile Include="Problem34.fs" />
+    <Compile Include="Problem35.fs" />
+    <Compile Include="Problem36.fs" />
+    <Compile Include="Problem37.fs" />
+    <Compile Include="Problem38.fs" />
+    <Compile Include="Problem39.fs" />
+    <Compile Include="Problem40.fs" />
+    <Compile Include="Problem41.fs" />
+    <Compile Include="Problem42.fs" />
+    <Compile Include="Problem43.fs" />
+    <Compile Include="Problem44.fs" />
+    <Compile Include="Problem45.fs" />
+    <Compile Include="Problem46.fs" />
+    <Compile Include="Problem47.fs" />
+    <Compile Include="Problem48.fs" />
+    <Compile Include="Problem49.fs" />
+    <Compile Include="Problem50.fs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	     Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>
